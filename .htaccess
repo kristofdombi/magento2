@@ -1,4 +1,5 @@
 RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{REQUEST_URI} !^/pub/
 RewriteCond %{REQUEST_URI} !^/setup/
 RewriteCond %{REQUEST_URI} !^/update/
